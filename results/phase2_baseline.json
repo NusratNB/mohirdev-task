@@ -1,0 +1,50 @@
+{
+  "rouge": {
+    "rouge1": 0.04861913622489226,
+    "rouge2": 0.008602150537634409,
+    "rougeL": 0.04272184207009373,
+    "rougeLsum": 0.04550035835885144
+  },
+  "samples": [
+    {
+      "ref": "Ukraina sharqidagi harbiy amaliyotlar Malayziya uchog'i qulagan hududga yaqinlashgan. Janglar shiddatli tus olishi tufayli gollandiyalik tergovchilar va politsiyachilar ikkinchi kundirki uchoq qulagan joyga eta olmay, Donetskka qaytishga majbur bo'lganlar.",
+      "pred": "1. Gorlovka shahrini armiya o'rab olgan Bi-bi-si muhbiri Tom Barrij xabar qilishicha, ukrain qo'shinlarining asosiy maqsadi - strategik jihatdan muhim bo'lgan ikki yo'lni egallab olish.\n2. Ukraina qo'mondonligi aynan mana shu yo'llar orqali bo'lginchilarga Rossiyadan qurollar etkazib berilayotganiga ishonadi.\n3. Dushanba kuni ertalab ukrain qo'shinlari Lugansk va Donetsk viloyatlarining Rossiyaning Rostov viloyati bilan chegarasidagi Saur-Mogila qo'rg'oni ustidan nazoratni qayta qo'lga olish"
+    },
+    {
+      "ref": "Ayni paytda Rossiyada 500 mingga yaqin o'zbekistonlik ayollar mehnat muhojirligida. Tirikchilik, pul topish maqsadida musofirlik yo'lini tanlagan o'zbek xotin qizlarini turli sohalarda ko'rish mumkin.",
+      "pred": ", o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o"
+    },
+    {
+      "ref": "Falastin rasmiylari aytishicha, o'tgan kecha G'azoga havo hujumlarining eng halokatlisi bo'lgan, kamida 20 kishi Isroil raketa nishonlariga uchrab halok bo'lgan. Ularning deyarli hammasi tinch fuqarolardir.",
+      "pred": "Isroil harbiysi Xon Yunusdagi uyda o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'"
+    },
+    {
+      "ref": "Koronavirus pandemiyasi dunyo bo'ylab millionlab odamlarning odatiy turmush tarzi va rejalarini ostin-ustun qilib yubordi. Ko'pchilik ekspertlarga ko'ra, pandemiya miqyosi shunchalik kattaki, kelayotgan haftalar va ehtimol, oylar davomida karantin choralaridan qochib bo'lmaydi.",
+      "pred": "va viruslarning o'zida qo'shish va o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish u"
+    },
+    {
+      "ref": "Britaniya parlamentining Vakillari palatasi ilk bor Xitoy shimoli-g'arbida uyg'urlar va yana boshqalarga nisbatan genotsid bo'layotganini bayon qildi.",
+      "pred": "\"ni aytadi. \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barch"
+    },
+    {
+      "ref": "Avstraliya Bosh vaziri Toni Abbott Islomiy davlat (ID) butun dunyoni egallash niyatiga ega ekanini aytib, Osiyo va Tinch ummoni havzasidagi davlatlarni jihodchi guruhlarga qarshi kurashishga chaqirdi.",
+      "pred": "Janob Abbott, Avstraliya o'zidagi terrorchilikning global ambitsiyalari bor, \"Bu terrorchilikning global ambitsiyalari bor\", - deya qo'shimcha qildi u. Janob Abbott eng katta vazifa yoshlarni jihodchi guruhlarga qo'shilishlarining oldini olish yo'lida ishlashdir. \"Biz idealist yoshlarimizga bu kabi o'lim oqimiga a'zo bo'lish o'zlarini qurbon qilish niyatlarini izhor qilishning butkul noto'g'ri usuli ekanini uqtirishimiz zarur\", - dedi u. Jihodchilarning jamiyatga ta'siridan tashvishga tushgan Avstraliya"
+    },
+    {
+      "ref": "O'zbekiston: Ota-onasi cho'pon bo'lsa, bolada nima ayb? - deputat oliy ta'limdagi imtiyozlar haqida nimalar dedi, kambag'allikni pul tarqatish orqali qisqartirib bo'lmaydi va qaysi hokim OAV bilan yaqindan ishlamoqchi - bbcuzbek.com dayjesti.",
+      "pred": ". «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajag"
+    },
+    {
+      "ref": "Koronavirus pandemiyasi dunyo bo'ylab juda ko'p insonlarning mahalla emas, dunyoga duv-duv gap bo'ladigan to'y o'tkazish orzusini chippakka chiqardi.",
+      "pred": "unliklari va o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o"
+    },
+    {
+      "ref": "\"Turkmaniston va O'zbekistonningo'ta repressiv siyosati 2013 yilning 23-24 aprel kunlari sinchkovlik bilan ko'rib chiqiladi\", deya xabar beradi Hyuman Rayts Uotch.",
+      "pred": "ilgan. \"BMTning 10 nafar ma'ruzachisi Turkmanistonga kirishiga ruxsat berilmagan, O'zbekiston rad etgan ma'ruzachilar soni esa, 11 nafarga etgan. Xalqaro Qizil Xoch tashkiloti bilan hamkorlik esa, yana bir diqqat qaratilishi kerak bo'lgan masaladir\", deydi Hyuman Rayts Uotch. \"BMTning 10 nafar ma'ruzachisi Turkmanistonga kirishiga ruxsat berilmagan, O'zbekiston rad etgan ma'ruzachilar soni esa, 11 nafarga etgan. Xalqaro Qizil Xoch tashkiloti bilan hamkorlik esa, yana bir diqqat qaratil"
+    },
+    {
+      "ref": "FIFA prezidenti Zep Blatter va UEFA rahbari Mishel Platini barcha futbolga aloqador faoliyatdan sakkiz yilga chetlashtirildi.",
+      "pred": "o'zga o'tkazishda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda"
+    }
+  ]
+}

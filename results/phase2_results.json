@@ -1,0 +1,80 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "lora": {
+    "r": 16,
+    "alpha": 32
+  },
+  "training": {
+    "samples": 5000,
+    "epochs": 8,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "time_min": 233.1,
+    "final_loss": 1.3217
+  },
+  "baseline_rouge": {
+    "rouge1": 0.0486,
+    "rouge2": 0.0086,
+    "rougeL": 0.0427,
+    "rougeLsum": 0.0455
+  },
+  "finetuned_rouge": {
+    "rouge1": 0.1073,
+    "rouge2": 0.0255,
+    "rougeL": 0.0905,
+    "rougeLsum": 0.09
+  },
+  "adapter_size_mb": 85.3,
+  "comparisons": [
+    {
+      "reference": "Ukraina sharqidagi harbiy amaliyotlar Malayziya uchog'i qulagan hududga yaqinlashgan. Janglar shiddatli tus olishi tufayli gollandiyalik tergovchilar va politsiyachilar ikkinchi kundirki uchoq qulagan joyga eta olmay, Donetskka qaytishga majbur bo'lganlar.",
+      "baseline": "1. Gorlovka shahrini armiya o'rab olgan Bi-bi-si muhbiri Tom Barrij xabar qilishicha, ukrain qo'shinlarining asosiy maqsadi - strategik jihatdan muhim bo'lgan ikki yo'lni egallab olish.\n2. Ukraina qo'mondonligi aynan mana shu yo'llar orqali bo'lginchilarga Rossiyadan qurollar etkazib berilayotganiga ishonadi.\n3. Dushanba kuni ertalab ukrain qo'shinlari Lugansk va Donetsk viloyatlarining Rossiyaning Rostov viloyati bilan chegarasidagi Saur-Mogila qo'rg'oni ustidan nazoratni qayta qo'lga olish",
+      "finetuned": "Ukraina sharqidagi Gorlovka shahridagi ukrain qo'shinlari Rossiyaning Rostov viloyatining Saur-Mogila qo'rg'oni ustidan nazoratni qayta qo'lga olishga muvaffaq bo'lganlar. Qo'shinlarning aytishicha, Ukraina armiyasi Rossiya sharqidagi Bessarabiy va Bessarabiy-Donetsk viloyatlari bilan chegarasidagi Lugansk va Donetsk viloyatlarini o'rab olgan. Qo'shinlarning aytishicha, Ukraina armiyasi Rossiya sharqidagi Bessarabiy va Bessarabiy-Donetsk viloyatlari bilan chegarasidagi Lugansk va Donetsk viloyatlarini o'rab olgan"
+    },
+    {
+      "reference": "Ayni paytda Rossiyada 500 mingga yaqin o'zbekistonlik ayollar mehnat muhojirligida. Tirikchilik, pul topish maqsadida musofirlik yo'lini tanlagan o'zbek xotin qizlarini turli sohalarda ko'rish mumkin.",
+      "baseline": ", o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o'zbekistonlik xizmati, o",
+      "finetuned": ", Rossiyada o'zbekistonlik mehnat muhojirlarining 30 foizini xotin-qizlar tashkil etmoqda. - Ular o'zbekistonlik mehnat muhojirlarining 30 foizini xotin-qizlar tashkil etmoqda. Ular o'zbekistonlik mehnat muhojirlarining 30 foizini xotin-qizlar tashkil etmoqda. Ular o'zbekistonlik mehnat muhojirlarining 30 foizini xotin-qizlar tashkil etmoqda. Ular o'zbekistonlik mehnat muhojirlarining 30 foizini xotin-qizlar tashkil etmoqda. Ular o'zbekistonlik mehn"
+    },
+    {
+      "reference": "Falastin rasmiylari aytishicha, o'tgan kecha G'azoga havo hujumlarining eng halokatlisi bo'lgan, kamida 20 kishi Isroil raketa nishonlariga uchrab halok bo'lgan. Ularning deyarli hammasi tinch fuqarolardir.",
+      "baseline": "Isroil harbiysi Xon Yunusdagi uyda o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'z uylarida o'",
+      "finetuned": "Falastin Sog'liqni saqlash vazirligi ishlarini \"bu mamlakatda yana bir necha kishi halok bo'lgan\" deb aytgan. Isroil hujumlarini boshlashicha, G'azo hukumati mamlakatda 100 dan ortiq kishi halok bo'lganini bildirgan. Falastin Sog'liqni saqlash vazirligi ishlarini \"bu mamlakatda yana bir necha kishi halok bo'lgan\" deb aytgan. Isroil hujumlarini boshlashicha, G'azo hukumati mamlakatda 100 dan ortiq kishi halok bo'lganini bildirgan. Falastin Sog'liqni saqlash"
+    },
+    {
+      "reference": "Koronavirus pandemiyasi dunyo bo'ylab millionlab odamlarning odatiy turmush tarzi va rejalarini ostin-ustun qilib yubordi. Ko'pchilik ekspertlarga ko'ra, pandemiya miqyosi shunchalik kattaki, kelayotgan haftalar va ehtimol, oylar davomida karantin choralaridan qochib bo'lmaydi.",
+      "baseline": "va viruslarning o'zida qo'shish va o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish uchun o'zida qo'shish u",
+      "finetuned": "ini yuqtirgan virusning Xitoyda tarqalishi bilan kamida hozircha. Ular Xitoyga asosan, chet davlatlardan qaytayotganlardir. Shu bois hukumat qattiq karantin choralarini asta-sekinlik bilan yumshatishni boshlamoqda. 3. Boshlangan virusning qo'shiq kuylashlari uchun odamlar minnatdorchilik so'zlarini aytib hayqirayotgani va qo'shiq kuylayotganini ko'rish mumkin. Boshlangan virusning qo'shiq kuylashlari uchun odamlar minnatdorchilik so'zlarini aytib hayqirayotgani va qo"
+    },
+    {
+      "reference": "Britaniya parlamentining Vakillari palatasi ilk bor Xitoy shimoli-g'arbida uyg'urlar va yana boshqalarga nisbatan genotsid bo'layotganini bayon qildi.",
+      "baseline": "\"ni aytadi. \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barcha besh mezoniga muvofiq ishlar bo'layotgani dalolati bor\". \"Shinjonning genotsidning barch",
+      "finetuned": "\" deb aytgan. Deputat G'anining aytishicha, \"bu xususda Britaniya parlamentining tomonidan to'g'ri qilgan taklifda, Shinjon hukumati o'zining rasmiy statistikalariga qarshi dalolat qilgan\". Debatda deputat G'anining aytishicha, Shinjon hukumati \"buyonlarga nisbatan to'g'ri qilgan taklifda\" deb aytgan. Debatda deputat G'anining aytishicha, Shinjon hukumati \"buyonlarga nisbatan to'g'ri qilgan taklifda\" deb aytgan. Debatda deputat G'anining aytishicha, Shinjon hukumati \"buyonlarga n"
+    },
+    {
+      "reference": "Avstraliya Bosh vaziri Toni Abbott Islomiy davlat (ID) butun dunyoni egallash niyatiga ega ekanini aytib, Osiyo va Tinch ummoni havzasidagi davlatlarni jihodchi guruhlarga qarshi kurashishga chaqirdi.",
+      "baseline": "Janob Abbott, Avstraliya o'zidagi terrorchilikning global ambitsiyalari bor, \"Bu terrorchilikning global ambitsiyalari bor\", - deya qo'shimcha qildi u. Janob Abbott eng katta vazifa yoshlarni jihodchi guruhlarga qo'shilishlarining oldini olish yo'lida ishlashdir. \"Biz idealist yoshlarimizga bu kabi o'lim oqimiga a'zo bo'lish o'zlarini qurbon qilish niyatlarini izhor qilishning butkul noto'g'ri usuli ekanini uqtirishimiz zarur\", - dedi u. Jihodchilarning jamiyatga ta'siridan tashvishga tushgan Avstraliya",
+      "finetuned": "Avstraliya politsiyasi terrorchi targ'ibotga qarshi kurash mavzusida o'tgan anjumanda janob Abbott ID panjasi uzun bo'lgan o'lim oqimi ekanini aytdi. Avstraliya politsiyasi terrorchilarning jihodchi guruhlarga qo'shilishlarining oldini olish yo'lida ishlashdi. Bi-bi-si O'zbek xizmati bilan Whatsapp, Telegram va Viber orqali bog'lanishni istasangiz, telefonimiz: +44 78-58-86-00-02. Instagram – BBC UZBEK Twitter – BBC UZBEK Odnoklassniki – BBC UZBEK Facebook- BBC UZBEK YouTube - BBCUZBEK"
+    },
+    {
+      "reference": "O'zbekiston: Ota-onasi cho'pon bo'lsa, bolada nima ayb? - deputat oliy ta'limdagi imtiyozlar haqida nimalar dedi, kambag'allikni pul tarqatish orqali qisqartirib bo'lmaydi va qaysi hokim OAV bilan yaqindan ishlamoqchi - bbcuzbek.com dayjesti.",
+      "baseline": ". «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajagidan xavotirda yashab kelayotgan», o'rtaga savol tashlaydi Kusherbaev. «Namangan shahri markazida o'z kelajag",
+      "finetuned": "ini bildirgan. U bu boradagi fikrlarni ma'lum qilgan. «O'zbekiston hukumatiga qarshi, o'tgan yil 15 sentyabr kuni o'tgan Xalqaro press-klub sessiyasida ma'lum qilgan fikrlarni ma'lum qilgan», deb aytgan Kusherbaev. «O'zbekiston hukumatiga qarshi, o'tgan yil 15 sentyabr kuni o'tgan Xalqaro press-klub sessiyasida ma'lum qilgan fikrlarni ma'lum qilgan», deb aytgan Kusherbaev. «O'zbekiston hukumatiga qarshi, o'tgan yil 15 sentyabr kuni o'tgan Xalqaro press"
+    },
+    {
+      "reference": "Koronavirus pandemiyasi dunyo bo'ylab juda ko'p insonlarning mahalla emas, dunyoga duv-duv gap bo'ladigan to'y o'tkazish orzusini chippakka chiqardi.",
+      "baseline": "unliklari va o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o'z o",
+      "finetuned": "atgan. Kelin-kuyov poytaxt Tengku Adnanning o'g'li Tengku Muhammad Hafiz mehmonlar avtomobillari navbati fotolarini o'zining Feysbukdagi sahifasida bo'lishi mumkin. Kelin-kuyov poytaxt Tengku Adnanning o'g'li Tengku Muhammad Hafiz mehmonlar avtomobillari navbati fotolarini o'zining Feysbukdagi sahifasida bo'lishi mumkin. Kelin-kuyov poytaxt Tengku Adnanning o'g'li Tengku Muhammad Hafiz mehmonlar avtomobillari navbati fotolarini o'zining Feysbukdagi sahifasida bo'lishi"
+    },
+    {
+      "reference": "\"Turkmaniston va O'zbekistonningo'ta repressiv siyosati 2013 yilning 23-24 aprel kunlari sinchkovlik bilan ko'rib chiqiladi\", deya xabar beradi Hyuman Rayts Uotch.",
+      "baseline": "ilgan. \"BMTning 10 nafar ma'ruzachisi Turkmanistonga kirishiga ruxsat berilmagan, O'zbekiston rad etgan ma'ruzachilar soni esa, 11 nafarga etgan. Xalqaro Qizil Xoch tashkiloti bilan hamkorlik esa, yana bir diqqat qaratilishi kerak bo'lgan masaladir\", deydi Hyuman Rayts Uotch. \"BMTning 10 nafar ma'ruzachisi Turkmanistonga kirishiga ruxsat berilmagan, O'zbekiston rad etgan ma'ruzachilar soni esa, 11 nafarga etgan. Xalqaro Qizil Xoch tashkiloti bilan hamkorlik esa, yana bir diqqat qaratil",
+      "finetuned": "ayotgan. Bu haqida BMTning xabar berishicha, yig'in yana bir necha mamlakatda yig'ilayotgan. \"Turmaniston va O'zbekiston hukumatlarining yig'in yuzasida inson huquqlarini toptash hollari o'zgarmagan\", deya qo'shimcha qiladi Hyuman Rayts Uotch. \"O'zbekiston va Turkmaniston hukumatlari yig'in yuzasida inson huquqlarini toptash hollari o'zgarmagan\", deya qo'shimcha qiladi Veronika Goldston. \"Turmaniston va O'zbekiston hukumatlarining yig'in yuzasida inson huquqlarini toptash hollari o'zgarmagan"
+    },
+    {
+      "reference": "FIFA prezidenti Zep Blatter va UEFA rahbari Mishel Platini barcha futbolga aloqador faoliyatdan sakkiz yilga chetlashtirildi.",
+      "baseline": "o'zga o'tkazishda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda o'zgaotganda",
+      "finetuned": "o'rinbosari bilan o'rganishni aytgan. Blatter 2007 yil 12 yoshda FIFA Bosh kotibi bilan o'rganib o'rinbosari bilan o'rganishni aytgan. U 2011 yil 20 yoshda o'rinbosari bilan o'rganib o'rganishni aytgan. U 2015 yil 25 yoshda o'rinbosari bilan o'rganib o'rganishni aytgan. U 2017 yil 26 yoshda o'rinbosari bilan o'rganib o'rganishni aytgan. U 2019 yil 27 yoshda o'rinbosari bilan o'rganib o'rganishni ayt"
+    }
+  ]
+}

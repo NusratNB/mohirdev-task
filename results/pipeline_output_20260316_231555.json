@@ -1,0 +1,14 @@
+{
+  "audio_file": "test_data\\test_audio.mp3",
+  "transcript": "umra safarlari tiklammoqta tog'ri ishtingiz transport va azirliga o'zbekiston xududidan birlashga arab amiriklari va sao'zi arabistoniga kitomolima yo'lovcha tashishni tashkili tishga oninchim martan boshlab ruxat berdi bu haqda o'zbekistonda faoliat yurituvchi milliy va xorijiy aviya kampanyalargi yuboralgan xatta aytiladi",
+  "summary": "O'zbekiston hukumati xabar qilishicha, 2018 yil 1 yanvarda boshlangan xalqaro turizm yurtida ishtingizning to'g'risida ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to",
+  "audio_duration_s": 61.4,
+  "transcription_time_s": 2.0,
+  "summarization_time_s": 20.3,
+  "total_time_s": 545.7,
+  "models": {
+    "stt": "./models/whisper-small-uzbek-checkpoints/checkpoint-800",
+    "llm_base": "Qwen/Qwen2.5-1.5B",
+    "llm_adapter": "./models/qwen-uz-summarizer-ckpts/checkpoint-750"
+  }
+}

@@ -1,0 +1,42 @@
+2026-03-16 23:15:55,930 INFO: ==================================================
+2026-03-16 23:15:55,930 INFO: UZBEK SPEECH-TO-SUMMARY PIPELINE
+2026-03-16 23:15:55,930 INFO: ==================================================
+2026-03-16 23:15:55,930 INFO:   Audio:  test_data\test_audio.mp3
+2026-03-16 23:15:55,930 INFO:   STT:    ./models/whisper-small-uzbek-checkpoints/checkpoint-800
+2026-03-16 23:15:55,931 INFO:   LLM:    Qwen/Qwen2.5-1.5B + ./models/qwen-uz-summarizer-ckpts/checkpoint-750
+2026-03-16 23:15:55,933 INFO:   GPU:    NVIDIA GeForce RTX 2070 SUPER
+2026-03-16 23:15:55,934 INFO: 
+2026-03-16 23:15:55,934 INFO: Loading audio: test_data\test_audio.mp3
+2026-03-16 23:15:57,656 INFO:   Duration: 61.4s | Samples: 983,040 | SR: 16000
+2026-03-16 23:15:57,656 INFO: Loading Whisper from ./models/whisper-small-uzbek-checkpoints/checkpoint-800...
+2026-03-16 23:15:59,322 INFO: Transcribing...
+2026-03-16 23:16:01,326 INFO:   Transcription (2.0s): umra safarlari tiklammoqta tog'ri ishtingiz transport va azirliga o'zbekiston xududidan birlashga arab amiriklari va sao'zi arabistoniga kitomolima yo'lovcha tashishni tashkili tishga oninchim martan 
+2026-03-16 23:16:01,349 INFO:   Whisper freed from GPU
+2026-03-16 23:16:01,350 INFO: Loading Qwen from Qwen/Qwen2.5-1.5B + adapter ./models/qwen-uz-summarizer-ckpts/checkpoint-750...
+2026-03-16 23:16:03,105 INFO: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-16 23:16:03,106 WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-16 23:16:03,121 INFO: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-16 23:16:03,342 INFO: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-16 23:16:03,357 INFO: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-16 23:16:04,728 INFO: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-16 23:16:04,958 INFO: HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/xet-read-token/8faed761d45a263340a0528343f099c05c9a4323 "HTTP/1.1 200 OK"
+2026-03-16 23:24:40,495 INFO: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-16 23:24:40,514 INFO: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/generation_config.json "HTTP/1.1 200 OK"
+2026-03-16 23:24:40,531 INFO: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/generation_config.json "HTTP/1.1 200 OK"
+2026-03-16 23:24:40,752 INFO: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-03-16 23:24:41,361 INFO:   Model loaded (520.0s)
+2026-03-16 23:24:41,361 INFO: Summarizing...
+2026-03-16 23:25:01,619 INFO:   Summary (20.3s): O'zbekiston hukumati xabar qilishicha, 2018 yil 1 yanvarda boshlangan xalqaro turizm yurtida ishtingizning to'g'risida ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning
+2026-03-16 23:25:01,657 INFO: 
+2026-03-16 23:25:01,657 INFO: ==================================================
+2026-03-16 23:25:01,658 INFO: RESULTS
+2026-03-16 23:25:01,658 INFO: ==================================================
+2026-03-16 23:25:01,658 INFO:   Original Transcript: umra safarlari tiklammoqta tog'ri ishtingiz transport va azirliga o'zbekiston xududidan birlashga arab amiriklari va sao'zi arabistoniga kitomolima yo'lovcha tashishni tashkili tishga oninchim martan boshlab ruxat berdi bu haqda o'zbekistonda faoliat yurituvchi milliy va xorijiy aviya kampanyalargi yuboralgan xatta aytiladi
+2026-03-16 23:25:01,658 INFO:   Summary: O'zbekiston hukumati xabar qilishicha, 2018 yil 1 yanvarda boshlangan xalqaro turizm yurtida ishtingizning to'g'risida ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to'g'ri ishtingizning to'g'risiga to
+2026-03-16 23:25:01,658 INFO: 
+2026-03-16 23:25:01,659 INFO:   Audio duration:      61.4s
+2026-03-16 23:25:01,659 INFO:   Transcription time:  2.0s
+2026-03-16 23:25:01,659 INFO:   Summarization time:  20.3s
+2026-03-16 23:25:01,659 INFO:   Total pipeline:      545.7s
+2026-03-16 23:25:01,659 INFO: ==================================================
+2026-03-16 23:25:01,660 INFO:   Saved to ./results/pipeline_output_20260316_231555.json

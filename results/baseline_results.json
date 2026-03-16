@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260314_204945",
+  "model": "openai/whisper-small",
+  "wer": 1.506265664160401,
+  "num_samples": 50,
+  "sample_transcriptions": [
+    {
+      "index": 0,
+      "reference": "hech narsa topisholmasa meni",
+      "prediction": " nishinar sa tapu shon masa"
+    },
+    {
+      "index": 1,
+      "reference": "aziz yurtdoshlar qadrdonlarim",
+      "prediction": " Hazziz yurttaşlar qadrdanlarum"
+    },
+    {
+      "index": 2,
+      "reference": "bir haqiqatni hech qachon esimizdan chiqarmasligimiz darkor",
+      "prediction": " Bur, haqqeyqatni hexqa chan isi meza nxqar maslegimiz darqor."
+    },
+    {
+      "index": 3,
+      "reference": "mayli narigi uyga kira qolinglar dedi xolposh xola darrov ko'nib",
+      "prediction": " Mai le, narge uge krak kalinar dedafal bash khala dar rau konabt."
+    },
+    {
+      "index": 4,
+      "reference": "dadasi indamadi",
+      "prediction": " Dadasen da mada."
+    },
+    {
+      "index": 5,
+      "reference": "o'zlari uchun to'lovni talab qiluvchilar ko'pincha o'zlarining sharaflarini sotishadi",
+      "prediction": " Ozlar otsun tolond tala klouchlar, qopince ozlar nixharaf tarinsat shed."
+    },
+    {
+      "index": 6,
+      "reference": "shu bilan birga viloyatda yo'l qo'yilgan kamchilik va nuqsonlar haqida gapirildi",
+      "prediction": " Shubh ulamburge mulayette yol qoyilgan khamtidik ve nuksonlar haqada gaburen"
+    },
+    {
+      "index": 7,
+      "reference": "ular etiklarini yechmay eski kigiz ustida iz qoldirib tokcha tomonga o'tishdi",
+      "prediction": " quler irtigramni yi yi jm'e iski qiydi's usdide izz kaldarab takcet amon utişti."
+    },
+    {
+      "index": 8,
+      "reference": "shundan so'ng yetti yil tutdi",
+      "prediction": " Shunasun yi yi ti ek te."
+    },
+    {
+      "index": 9,
+      "reference": "mayli o'zicha bir yashab ko'rsin",
+      "prediction": " Mayla usjapar yashap kursun."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "timestamp": "20260314_204945",
+  "config": {
+    "model": "openai/whisper-small",
+    "train_samples": 1250,
+    "eval_samples": 250,
+    "batch_size": 4,
+    "effective_batch_size": 16,
+    "max_steps": 800,
+    "learning_rate": 1e-05,
+    "fp16": true,
+    "gpu": "NVIDIA GeForce RTX 2070 SUPER"
+  },
+  "results": {
+    "baseline_wer": 1.506265664160401,
+    "finetuned_wer": 0.5864661654135338,
+    "improvement_percent": 61.06,
+    "training_loss": 0.029834933020174502,
+    "training_time_minutes": 59.7
+  },
+  "sample_comparisons": [
+    {
+      "index": 0,
+      "reference": "hech narsa topisholmasa meni",
+      "baseline_prediction": " nishinar sa tapu shon masa",
+      "finetuned_prediction": "nishni narsla topishmasa"
+    },
+    {
+      "index": 1,
+      "reference": "aziz yurtdoshlar qadrdonlarim",
+      "baseline_prediction": " Hazziz yurttaşlar qadrdanlarum",
+      "finetuned_prediction": "haziz yurtdashilar qadrdanlarim"
+    },
+    {
+      "index": 2,
+      "reference": "bir haqiqatni hech qachon esimizdan chiqarmasligimiz darkor",
+      "baseline_prediction": " Bur, haqqeyqatni hexqa chan isi meza nxqar maslegimiz darqor.",
+      "finetuned_prediction": "bir haqiqatni hech qacha esimizdan chiqarmasligimiz darkor"
+    },
+    {
+      "index": 3,
+      "reference": "mayli narigi uyga kira qolinglar dedi xolposh xola darrov ko'nib",
+      "baseline_prediction": " Mai le, narge uge krak kalinar dedafal bash khala dar rau konabt.",
+      "finetuned_prediction": "mayli narga uyga kira qo'linglar dedi xolbosh xolidar rav konibdi"
+    },
+    {
+      "index": 4,
+      "reference": "dadasi indamadi",
+      "baseline_prediction": " Dadasen da mada.",
+      "finetuned_prediction": "dedasim dumadi"
+    },
+    {
+      "index": 5,
+      "reference": "o'zlari uchun to'lovni talab qiluvchilar ko'pincha o'zlarining sharaflarini sotishadi",
+      "baseline_prediction": " Ozlar otsun tolond tala klouchlar, qopince ozlar nixharaf tarinsat shed.",
+      "finetuned_prediction": "o'zlar uchun to'lovini talab qulo uchilar ko'pinchi o'zlarning sharaflarini soatishadi"
+    },
+    {
+      "index": 6,
+      "reference": "shu bilan birga viloyatda yo'l qo'yilgan kamchilik va nuqsonlar haqida gapirildi",
+      "baseline_prediction": " Shubh ulamburge mulayette yol qoyilgan khamtidik ve nuksonlar haqada gaburen",
+      "finetuned_prediction": "shu bilan birga miloyatta yo'l qo'yilgan kamchidik va nuqsonlar haqida gapiran"
+    },
+    {
+      "index": 7,
+      "reference": "ular etiklarini yechmay eski kigiz ustida iz qoldirib tokcha tomonga o'tishdi",
+      "baseline_prediction": " quler irtigramni yi yi jm'e iski qiydi's usdide izz kaldarab takcet amon utişti.",
+      "finetuned_prediction": "ular etigramni yechmay eski kegiz ustida iskoldirib togcha tomon o'tishdi"
+    },
+    {
+      "index": 8,
+      "reference": "shundan so'ng yetti yil tutdi",
+      "baseline_prediction": " Shunasun yi yi ti ek te.",
+      "finetuned_prediction": "uchidan so'ng yetti yakutdi"
+    },
+    {
+      "index": 9,
+      "reference": "mayli o'zicha bir yashab ko'rsin",
+      "baseline_prediction": " Mayla usjapar yashap kursun.",
+      "finetuned_prediction": "mayli o'z japa yashab ko'rsim"
+    }
+  ]
+}

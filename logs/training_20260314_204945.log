@@ -1,0 +1,163 @@
+2026-03-14 20:49:45,150 [INFO] ============================================================
+2026-03-14 20:49:45,150 [INFO] PHASE 1: WHISPER STT FINE-TUNING — UZBEK
+2026-03-14 20:49:45,150 [INFO] ============================================================
+2026-03-14 20:49:45,151 [INFO] Timestamp:       20260314_204945
+2026-03-14 20:49:45,151 [INFO] Model:           openai/whisper-small
+2026-03-14 20:49:45,151 [INFO] Train samples:   1250
+2026-03-14 20:49:45,151 [INFO] Eval samples:    250
+2026-03-14 20:49:45,151 [INFO] Batch size:      4 (effective: 16)
+2026-03-14 20:49:45,159 [INFO] Max steps:       800
+2026-03-14 20:49:45,159 [INFO] Learning rate:   1e-05
+2026-03-14 20:49:45,161 [INFO] GPU:             NVIDIA GeForce RTX 2070 SUPER
+2026-03-14 20:49:45,162 [INFO] VRAM:            8.6 GB
+2026-03-14 20:49:45,162 [INFO] PyTorch:         2.6.0+cu124
+2026-03-14 20:49:45,162 [INFO] CUDA available:  True
+2026-03-14 20:49:45,162 [INFO] 
+2026-03-14 20:49:45,162 [INFO] STEP 1: Loading dataset...
+2026-03-14 20:49:45,162 [INFO] Loading cached dataset from ./data/uzbek_speech_corpus
+2026-03-14 20:49:45,931 [INFO] Dataset loaded in 0.8s
+2026-03-14 20:49:45,931 [INFO] Full dataset: DatasetDict({
+    train: Dataset({
+        features: ['id', 'audio', 'sentence'],
+        num_rows: 100767
+    })
+    validation: Dataset({
+        features: ['id', 'audio', 'sentence'],
+        num_rows: 3783
+    })
+    test: Dataset({
+        features: ['id', 'audio', 'sentence'],
+        num_rows: 3837
+    })
+})
+2026-03-14 20:49:45,932 [INFO] Train: 100767, Val: 3783, Test: 3837
+2026-03-14 20:49:45,951 [INFO] Sample entry keys: ['id', 'audio', 'sentence']
+2026-03-14 20:49:45,951 [INFO] Sample sentence: salmoq bilan oyog'ini oqsoqlanib bosardi
+2026-03-14 20:49:45,951 [INFO] 
+2026-03-14 20:49:45,952 [INFO] STEP 2: Creating subsets...
+2026-03-14 20:49:45,971 [INFO] Train subset: 1250 samples
+2026-03-14 20:49:45,971 [INFO] Eval subset:  250 samples
+2026-03-14 20:49:45,971 [INFO] Baseline eval: 50 samples
+2026-03-14 20:49:45,972 [INFO] 
+2026-03-14 20:49:45,972 [INFO] STEP 3: Loading Whisper model + processor...
+2026-03-14 20:49:46,462 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai/whisper-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:46,672 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:46,673 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 20:49:46,880 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/chat_template.json "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:47,097 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:47,318 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/audio_tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:47,525 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:47,727 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 20:49:47,740 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/whisper-small/973afd24965f72e36ca33b3055d56a652f456b4d/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-14 20:49:47,975 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:48,195 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 20:49:48,213 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/whisper-small/973afd24965f72e36ca33b3055d56a652f456b4d/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-14 20:49:48,425 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 20:49:48,439 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/whisper-small/973afd24965f72e36ca33b3055d56a652f456b4d/config.json "HTTP/1.1 200 OK"
+2026-03-14 20:49:48,651 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 20:49:48,666 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/whisper-small/973afd24965f72e36ca33b3055d56a652f456b4d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 20:49:48,889 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai/whisper-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 20:49:49,100 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai/whisper-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 20:49:49,854 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 20:49:49,869 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/whisper-small/973afd24965f72e36ca33b3055d56a652f456b4d/config.json "HTTP/1.1 200 OK"
+2026-03-14 20:49:50,084 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 20:49:50,521 [INFO] HTTP Request: HEAD https://huggingface.co/openai/whisper-small/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 20:49:50,535 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/whisper-small/973afd24965f72e36ca33b3055d56a652f456b4d/generation_config.json "HTTP/1.1 200 OK"
+2026-03-14 20:49:50,542 [INFO] Model loaded in 4.6s
+2026-03-14 20:49:50,543 [INFO] Total parameters:     241,734,912
+2026-03-14 20:49:50,543 [INFO] Trainable parameters: 241,734,912
+2026-03-14 20:49:50,543 [INFO] Model size (approx):  0.97 GB (fp32)
+2026-03-14 20:49:50,543 [INFO] 
+2026-03-14 20:49:50,544 [INFO] STEP 4: Preprocessing audio...
+2026-03-14 20:49:52,120 [INFO] Preprocessing done in 1.6s
+2026-03-14 20:49:52,121 [INFO] Train features: 1250
+2026-03-14 20:49:52,121 [INFO] Eval features:  250
+2026-03-14 20:49:52,121 [INFO] 
+2026-03-14 20:49:54,077 [INFO] STEP 7: Calculating BASELINE WER (before fine-tuning)...
+2026-03-14 20:49:55,279 [INFO]   Sample 0: REF='hech narsa topisholmasa meni...' PRED=' nishinar sa tapu shon masa...'
+2026-03-14 20:49:55,558 [INFO]   Sample 1: REF='aziz yurtdoshlar qadrdonlarim...' PRED=' Hazziz yurttaşlar qadrdanlarum...'
+2026-03-14 20:49:56,024 [INFO]   Sample 2: REF='bir haqiqatni hech qachon esimizdan chiqarmasligimiz darkor...' PRED=' Bur, haqqeyqatni hexqa chan isi meza nxqar maslegimiz darqor....'
+2026-03-14 20:49:56,433 [INFO]   Sample 3: REF='mayli narigi uyga kira qolinglar dedi xolposh xola darrov ko'nib...' PRED=' Mai le, narge uge krak kalinar dedafal bash khala dar rau konabt....'
+2026-03-14 20:49:56,611 [INFO]   Sample 4: REF='dadasi indamadi...' PRED=' Dadasen da mada....'
+2026-03-14 20:49:57,072 [INFO]   Sample 5: REF='o'zlari uchun to'lovni talab qiluvchilar ko'pincha o'zlarining sharaflarini soti...' PRED=' Ozlar otsun tolond tala klouchlar, qopince ozlar nixharaf tarinsat shed....'
+2026-03-14 20:49:57,517 [INFO]   Sample 6: REF='shu bilan birga viloyatda yo'l qo'yilgan kamchilik va nuqsonlar haqida gapirildi...' PRED=' Shubh ulamburge mulayette yol qoyilgan khamtidik ve nuksonlar haqada gaburen...'
+2026-03-14 20:49:58,065 [INFO]   Sample 7: REF='ular etiklarini yechmay eski kigiz ustida iz qoldirib tokcha tomonga o'tishdi...' PRED=' quler irtigramni yi yi jm'e iski qiydi's usdide izz kaldarab takcet amon utişti...'
+2026-03-14 20:49:58,296 [INFO]   Sample 8: REF='shundan so'ng yetti yil tutdi...' PRED=' Shunasun yi yi ti ek te....'
+2026-03-14 20:49:58,545 [INFO]   Sample 9: REF='mayli o'zicha bir yashab ko'rsin...' PRED=' Mayla usjapar yashap kursun....'
+2026-03-14 20:50:24,946 [INFO] 
+2026-03-14 20:50:24,946 [INFO] *** BASELINE WER: 1.5063 ***
+2026-03-14 20:50:24,946 [INFO] Baseline eval done in 30.9s
+2026-03-14 20:50:24,946 [INFO] 
+2026-03-14 20:50:24,947 [INFO] Baseline results saved to ./results/baseline_results.json
+2026-03-14 20:50:24,947 [INFO] 
+2026-03-14 20:50:24,948 [INFO] STEP 8: Starting fine-tuning...
+2026-03-14 20:50:24,948 [INFO]   Batch size:        4
+2026-03-14 20:50:24,948 [INFO]   Grad accumulation: 4
+2026-03-14 20:50:24,948 [INFO]   Effective batch:   16
+2026-03-14 20:50:24,948 [INFO]   Max steps:         800
+2026-03-14 20:50:24,948 [INFO]   Eval every:        200 steps
+2026-03-14 20:50:24,948 [INFO]   Save every:        200 steps
+2026-03-14 20:50:24,949 [INFO] 
+2026-03-14 21:50:06,499 [INFO] 
+2026-03-14 21:50:06,500 [INFO] Training completed in 59.7 minutes
+2026-03-14 21:50:06,500 [INFO] Training loss: 0.0298
+2026-03-14 21:50:06,500 [INFO] 
+2026-03-14 21:50:06,503 [INFO] STEP 9: Saving fine-tuned model...
+2026-03-14 21:50:08,067 [INFO] Model saved to ./models/whisper-small-uzbek-finetuned
+2026-03-14 21:50:08,067 [INFO] 
+2026-03-14 21:50:08,067 [INFO] STEP 10: Calculating FINE-TUNED WER...
+2026-03-14 21:50:08,921 [INFO]   Sample 0:
+2026-03-14 21:50:08,921 [INFO]     REF:       'hech narsa topisholmasa meni'
+2026-03-14 21:50:08,922 [INFO]     BASELINE:  ' nishinar sa tapu shon masa'
+2026-03-14 21:50:08,922 [INFO]     FINETUNED: 'nishni narsla topishmasa'
+2026-03-14 21:50:09,533 [INFO]   Sample 1:
+2026-03-14 21:50:09,533 [INFO]     REF:       'aziz yurtdoshlar qadrdonlarim'
+2026-03-14 21:50:09,534 [INFO]     BASELINE:  ' Hazziz yurttaşlar qadrdanlarum'
+2026-03-14 21:50:09,534 [INFO]     FINETUNED: 'haziz yurtdashilar qadrdanlarim'
+2026-03-14 21:50:10,144 [INFO]   Sample 2:
+2026-03-14 21:50:10,145 [INFO]     REF:       'bir haqiqatni hech qachon esimizdan chiqarmasligimiz darkor'
+2026-03-14 21:50:10,145 [INFO]     BASELINE:  ' Bur, haqqeyqatni hexqa chan isi meza nxqar maslegimiz darqor.'
+2026-03-14 21:50:10,145 [INFO]     FINETUNED: 'bir haqiqatni hech qacha esimizdan chiqarmasligimiz darkor'
+2026-03-14 21:50:10,895 [INFO]   Sample 3:
+2026-03-14 21:50:10,895 [INFO]     REF:       'mayli narigi uyga kira qolinglar dedi xolposh xola darrov ko'nib'
+2026-03-14 21:50:10,896 [INFO]     BASELINE:  ' Mai le, narge uge krak kalinar dedafal bash khala dar rau konabt.'
+2026-03-14 21:50:10,896 [INFO]     FINETUNED: 'mayli narga uyga kira qo'linglar dedi xolbosh xolidar rav konibdi'
+2026-03-14 21:50:11,408 [INFO]   Sample 4:
+2026-03-14 21:50:11,408 [INFO]     REF:       'dadasi indamadi'
+2026-03-14 21:50:11,409 [INFO]     BASELINE:  ' Dadasen da mada.'
+2026-03-14 21:50:11,409 [INFO]     FINETUNED: 'dedasim dumadi'
+2026-03-14 21:50:12,223 [INFO]   Sample 5:
+2026-03-14 21:50:12,223 [INFO]     REF:       'o'zlari uchun to'lovni talab qiluvchilar ko'pincha o'zlarining sharaflarini soti'
+2026-03-14 21:50:12,223 [INFO]     BASELINE:  ' Ozlar otsun tolond tala klouchlar, qopince ozlar nixharaf tarinsat shed.'
+2026-03-14 21:50:12,224 [INFO]     FINETUNED: 'o'zlar uchun to'lovini talab qulo uchilar ko'pinchi o'zlarning sharaflarini soat'
+2026-03-14 21:50:13,276 [INFO]   Sample 6:
+2026-03-14 21:50:13,277 [INFO]     REF:       'shu bilan birga viloyatda yo'l qo'yilgan kamchilik va nuqsonlar haqida gapirildi'
+2026-03-14 21:50:13,277 [INFO]     BASELINE:  ' Shubh ulamburge mulayette yol qoyilgan khamtidik ve nuksonlar haqada gaburen'
+2026-03-14 21:50:13,277 [INFO]     FINETUNED: 'shu bilan birga miloyatta yo'l qo'yilgan kamchidik va nuqsonlar haqida gapiran'
+2026-03-14 21:50:14,279 [INFO]   Sample 7:
+2026-03-14 21:50:14,279 [INFO]     REF:       'ular etiklarini yechmay eski kigiz ustida iz qoldirib tokcha tomonga o'tishdi'
+2026-03-14 21:50:14,280 [INFO]     BASELINE:  ' quler irtigramni yi yi jm'e iski qiydi's usdide izz kaldarab takcet amon utişti'
+2026-03-14 21:50:14,280 [INFO]     FINETUNED: 'ular etigramni yechmay eski kegiz ustida iskoldirib togcha tomon o'tishdi'
+2026-03-14 21:50:14,721 [INFO]   Sample 8:
+2026-03-14 21:50:14,721 [INFO]     REF:       'shundan so'ng yetti yil tutdi'
+2026-03-14 21:50:14,722 [INFO]     BASELINE:  ' Shunasun yi yi ti ek te.'
+2026-03-14 21:50:14,722 [INFO]     FINETUNED: 'uchidan so'ng yetti yakutdi'
+2026-03-14 21:50:15,156 [INFO]   Sample 9:
+2026-03-14 21:50:15,156 [INFO]     REF:       'mayli o'zicha bir yashab ko'rsin'
+2026-03-14 21:50:15,157 [INFO]     BASELINE:  ' Mayla usjapar yashap kursun.'
+2026-03-14 21:50:15,157 [INFO]     FINETUNED: 'mayli o'z japa yashab ko'rsim'
+2026-03-14 21:50:39,892 [INFO] 
+2026-03-14 21:50:39,892 [INFO] ============================================================
+2026-03-14 21:50:39,893 [INFO] FINAL RESULTS
+2026-03-14 21:50:39,893 [INFO] ============================================================
+2026-03-14 21:50:39,893 [INFO]   BASELINE WER:    1.5063
+2026-03-14 21:50:39,893 [INFO]   FINE-TUNED WER:  0.5865
+2026-03-14 21:50:39,893 [INFO]   IMPROVEMENT:     61.1%
+2026-03-14 21:50:39,894 [INFO]   Eval time:       31.8s
+2026-03-14 21:50:39,894 [INFO] ============================================================
+2026-03-14 21:50:39,895 [INFO] All results saved to ./results/final_results.json
+2026-03-14 21:50:39,895 [INFO] Logs saved to ./logs/training_20260314_204945.log
+2026-03-14 21:50:39,896 [INFO] Model saved to ./models/whisper-small-uzbek-finetuned
+2026-03-14 21:50:39,896 [INFO] TensorBoard logs: ./logs/tensorboard
+2026-03-14 21:50:39,896 [INFO] 
+2026-03-14 21:50:39,896 [INFO] Phase 1 COMPLETE. Ready for Phase 2.
