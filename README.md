@@ -1,3 +1,5 @@
+## Disclaimer: This task was completed with the assistance of AI.
+
 # Uzbek Speech-to-Summary Pipeline
 
 Takes Uzbek audio, transcribes it, and generates a summary — all in Uzbek.
